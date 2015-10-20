@@ -32,8 +32,9 @@ public class removeDups
 					++tail;
 				}
 			}
-			str[tail] = 0;
-			return new String(str);
+			str[tail] = '0';
+			String returnString =  new String(str);
+			return returnString.substring(0, returnString.indexOf('0'));
 		}
 		
 			
