@@ -1,4 +1,4 @@
-package chapter1;
+package Code;
 import java.util.*;
 
 public class rotateString {

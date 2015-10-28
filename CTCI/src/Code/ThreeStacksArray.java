@@ -1,4 +1,4 @@
-package chapter1;
+package Code;
 
 public class ThreeStacksArray 
 {
