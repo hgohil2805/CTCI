@@ -76,6 +76,16 @@ public class BinarySearchTree
     		 System.out.print("\t" + root.data);
     	 }
      }
+
+	public int MaximumDepthOfTree(Node root){
+        if(root == null){
+            return 0;
+        }
+
+        return 1 + Math.max(MaximumDepthOfTree(root.left), MaximumDepthOfTree(root.right));
+
+    }
+
 	public static void main(String[] args) 
 	{
 		BinarySearchTree obj = new BinarySearchTree();
@@ -96,6 +106,19 @@ public class BinarySearchTree
 		System.out.println();
 		System.out.println("Post Order Traversel : ");
 		obj.postOrder(obj.root);
+
+        System.out.println();
+        System.out.println("==============MAXIMUM DEPTH OF BST==============");
+
+        BinarySearchTree tree = new BinarySearchTree();
+
+        tree.insert(10);
+        tree.insert(5);
+        tree.insert(15);
+        tree.insert(3);
+        tree.insert(1);
+
+        System.out.println(tree.MaximumDepthOfTree(tree.root));
 	}
 	
 	
