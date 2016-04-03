@@ -1,5 +1,4 @@
 package Code;
-import java.util.*;
 public class LinkedList 
 {
 	public Node head;
@@ -130,6 +129,18 @@ public class LinkedList
 			reverseLLRecursive(temp, root);
 		}
 	}
+
+	public void removeNodeFromLL(Node removeNode){
+        if(removeNode == null){
+            return;
+        }
+
+        else{
+            removeNode.data = removeNode.next.data;
+            removeNode.next = removeNode.next.next;
+        }
+    }
+
 
 	public static void main(String[] args) 
 	{
