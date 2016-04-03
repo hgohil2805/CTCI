@@ -97,6 +97,21 @@ public class BinarySearchTree
         }
     }
 
+    public boolean isSameTree(Node p, Node q){
+        if(p == null && q == null){
+            return true;
+        }else if(p != null && q != null){
+            if(p.data == q.data){
+                return isSameTree(p.left, q.left) && isSameTree(q.right, p.right);
+            }
+        }else{
+            return false;
+        }
+
+        return false;
+    }
+
+
 
 	public static void main(String[] args) 
 	{
@@ -150,6 +165,29 @@ public class BinarySearchTree
         System.out.println("Inverted tree: ");
         Node invertedNode = invertTree.invertTree(invertTree.root);
         invertTree.inOrder(invertedNode);
+
+        System.out.println();
+        System.out.println("==============Compare two trees==============");
+
+        BinarySearchTree p = new BinarySearchTree();
+        p.insert(10);
+        p.insert(5);
+        p.insert(15);
+        p.insert(3);
+        p.insert(7);
+        p.insert(12);
+        p.insert(17);
+
+        BinarySearchTree q = new BinarySearchTree();
+        q.insert(10);
+        q.insert(5);
+        q.insert(15);
+        q.insert(3);
+        q.insert(7);
+        q.insert(12);
+        q.insert(17);
+
+        System.out.println(p.isSameTree(p.root,q.root));
 	}
 	
 	
