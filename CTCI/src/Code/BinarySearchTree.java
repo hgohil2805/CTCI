@@ -86,6 +86,18 @@ public class BinarySearchTree
 
     }
 
+    public Node invertTree(Node root){
+        if(root == null)
+            return null;
+        else{
+            Node temp = root.left;
+            root.left = invertTree(root.right);
+            root.right = invertTree(temp);
+            return root;
+        }
+    }
+
+
 	public static void main(String[] args) 
 	{
 		BinarySearchTree obj = new BinarySearchTree();
@@ -119,6 +131,25 @@ public class BinarySearchTree
         tree.insert(1);
 
         System.out.println(tree.MaximumDepthOfTree(tree.root));
+
+        System.out.println();
+        System.out.println("==============INVERT TREE==============");
+
+		BinarySearchTree invertTree = new BinarySearchTree();
+        invertTree.insert(4);
+        invertTree.insert(2);
+        invertTree.insert(7);
+        invertTree.insert(1);
+        invertTree.insert(3);
+        invertTree.insert(6);
+        invertTree.insert(9);
+
+        System.out.println("Non inverted tree: ") ;
+        invertTree.inOrder(invertTree.root);
+        System.out.println();
+        System.out.println("Inverted tree: ");
+        Node invertedNode = invertTree.invertTree(invertTree.root);
+        invertTree.inOrder(invertedNode);
 	}
 	
 	
