@@ -10,3 +10,5 @@
   Remove a node from LL given access to only that node. LinkedList.java -> removeNodeFromLL
 - Same Tree
   Given two binary trees, write a function to check if they are equal or not.
+- Anagrams
+  Given two strings s and t, write a function to determine if t is an anagram of s.
