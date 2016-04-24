@@ -14,3 +14,7 @@
   Given two strings s and t, write a function to determine if t is an anagram of s.
 - Array Duplicates
   Given an array of integers, find if the array contains any duplicates
+- Excel Sheet Column Number
+  Given a column title as appear in an Excel sheet, return its corresponding column number
+- Majority Element
+  Majority element in an array
