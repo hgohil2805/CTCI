@@ -16,3 +16,5 @@
   Given an array of integers, find if the array contains any duplicates
 - Excel Sheet Column Number
   Given a column title as appear in an Excel sheet, return its corresponding column number
+- Majority Element
+  Majority element in an array
