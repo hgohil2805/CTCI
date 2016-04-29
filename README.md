@@ -18,3 +18,5 @@
   Given a column title as appear in an Excel sheet, return its corresponding column number
 - Majority Element
   Majority element in an array
+- LinkedList Reverse
+  Part of Code/LinkedList.java
