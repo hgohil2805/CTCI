@@ -114,6 +114,20 @@ public class BinarySearchTree
 
 
 
+    public Node lowestAncestor(Node left, Node right, Node root){
+        if(root == null)
+            return null;
+        if(root == left || root == right)
+            return root;
+
+        Node leftReturn = lowestAncestor(left, right, root.left);
+        Node rightReturn = lowestAncestor(left, right, root.right);
+
+        return (leftReturn != null && rightReturn != null ? root : leftReturn == null ? rightReturn : leftReturn);
+    }
+
+
+
 	public static void main(String[] args) 
 	{
 		BinarySearchTree obj = new BinarySearchTree();
@@ -189,6 +203,8 @@ public class BinarySearchTree
         q.insert(17);
 
         System.out.println(p.isSameTree(p.root,q.root));
+
+
 	}
 	
 	

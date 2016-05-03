@@ -20,3 +20,5 @@
   Majority element in an array
 - LinkedList Reverse
   Part of Code/LinkedList.java
+- Lowest Common Ancestor
+  BinarySearchTree.lowestAncestor()
