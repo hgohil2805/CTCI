@@ -22,3 +22,5 @@
   Part of Code/LinkedList.java
 - Lowest Common Ancestor
   BinarySearchTree.lowestAncestor()
+- Hamming Weight 
+  Number of 1 Bits
