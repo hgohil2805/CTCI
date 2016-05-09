@@ -28,3 +28,5 @@
   Given an integer, write a function to determine if it is a power of three.
 - Climbing Stairs
   You are climbing a stair case. It takes n steps to reach to the top.
+- Power of two 
+  Given an integer, write a function to determine if it is a power of two.
