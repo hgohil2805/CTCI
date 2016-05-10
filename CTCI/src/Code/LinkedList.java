@@ -1,5 +1,8 @@
 package Code;
-public class LinkedList 
+
+import java.util.Arrays;
+
+public class LinkedList
 {
 	public Node head;
 	public LinkedList()
@@ -141,6 +144,46 @@ public class LinkedList
         }
     }
 
+	public Node mergeTwoLists(Node n1, Node n2 ){
+        if(n1 == null)
+            return n2;
+        if(n2 == null)
+            return n1;
+
+        LinkedList returnList = new LinkedList();
+
+        while(n1 != null && n2 != null){
+            if(n1.data < n2.data){
+                returnList.addElement(n1.data);
+                n1 = n1.next;
+            }
+            else{
+                returnList.addElement(n2.data);
+                n2 = n2.next;
+            }
+        }
+
+        if(n1 == null && n2 != null){
+            while(n2 != null){
+                returnList.addElement(n2.data);
+                n2 = n2.next;
+            }
+        }
+        else{
+            while(n1 != null){
+                returnList.addElement(n1.data);
+            }
+        }
+
+        return returnList.head;
+    }
+
+    public void printList(Node head){
+        while(head != null) {
+            System.out.println(head.data);
+            head = head.next;
+        }
+    }
 
 	public static void main(String[] args) 
 	{
@@ -171,6 +214,23 @@ public class LinkedList
 		System.out.println("Reversing LL Recursively Again ");
 		obj.reverseLLRecursive(obj.head,null);
 		obj.printLL(obj.head);
+
+
+        LinkedList n1 = new LinkedList();
+        n1.addElement(1);
+        n1.addElement(3);
+        n1.addElement(5);
+        n1.addElement(7);
+
+        LinkedList n2 = new LinkedList();
+        n2.addElement(2);
+        n2.addElement(4);
+        n2.addElement(6);
+        n2.addElement(8);
+
+        Node output = n1.mergeTwoLists(n1.head,n2.head);
+        n1.printLL(output);
+
 	}
 	private static class Node
 	{
