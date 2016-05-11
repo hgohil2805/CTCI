@@ -32,6 +32,7 @@ public class ReverseVowels {
             else{
                 i++;
                 j--;
+
             }
         }
         return new String(charString);
