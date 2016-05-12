@@ -1,5 +1,7 @@
 package LeetCode;
 
+import java.util.Arrays;
+
 /**
  * Created by iceman on 5/12/2016.
  */
@@ -35,6 +37,8 @@ public class HouseRobber {
                 robbedMoney[i] = Math.max(nums[i],nums[i - 1]);
             }
             else{
+                /*System.out.format("Robbed money at loop %s is %s",i, Arrays.toString(robbedMoney));
+                System.out.println();*/
                 robbedMoney[i] = Math.max(robbedMoney[i - 2] + nums[i], robbedMoney[i - 1]);
             }
         }
