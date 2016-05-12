@@ -40,4 +40,5 @@
   Given a list of non-negative integers representing the amount of money of each house, determine the maximum amount of money you can rob tonight without alerting the police.
 - Balanced Binary Tree
   For this problem, a height-balanced binary tree is defined as a binary tree in which the depth of the two subtrees of every node never differ by more than 1
-   
+- Remove element
+  Given an array and a value, remove all instances of that value in place and return the new length.
