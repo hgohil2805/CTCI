@@ -347,6 +347,29 @@ public class SerializeBST
 		
 		
 	}
+
+
+    public boolean isBalanced(Node root) {
+        if(root == null)
+            return true;
+
+        int left = getHeight(root.left);
+        int right = getHeight(root.right);
+
+        if(Math.abs(left) - Math.abs(right) > 1)
+            return false;
+
+        return isBalanced(root.left) && isBalanced(root.right);
+
+    }
+
+    public int getHeight(Node root){
+        if(root == null)
+            return 0;
+
+        return Math.max(getHeight(root.left),getHeight(root.right)) + 1;
+    }
+
 	public static void main(String[] args) 
 	{
 		SerializeBST obj = new SerializeBST();
