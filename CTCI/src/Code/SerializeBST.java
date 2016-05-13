@@ -370,6 +370,32 @@ public class SerializeBST
         return Math.max(getHeight(root.left),getHeight(root.right)) + 1;
     }
 
+
+    public boolean isSymmetric(Node root){
+        if(root == null)
+            return true;
+        return isSymmetricHelper(root.left, root.right);
+    }
+
+    public boolean isSymmetricHelper(Node left, Node right){
+        if(left == null && right == null)
+            return true;
+
+        if(left == null || right == null)
+            return false;
+
+        if(left.data != right.data)
+            return false;
+
+        if(!isSymmetricHelper(left.left, right.right))
+            return false;
+
+        if(!isSymmetricHelper(left.right, right.left))
+            return false;
+
+        return true;
+    }
+
 	public static void main(String[] args) 
 	{
 		SerializeBST obj = new SerializeBST();
