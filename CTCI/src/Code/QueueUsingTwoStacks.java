@@ -32,7 +32,15 @@ public class QueueUsingTwoStacks
 			return copy.pop();
 		}
 	}
-	
+
+	public boolean isEmpty(){
+        return copy.isEmpty() && base.isEmpty();
+    }
+
+    public int peek(){
+        return 0;
+    }
+
 	public static void main(String args[])
 	{
 		QueueUsingTwoStacks obj = new QueueUsingTwoStacks();
