@@ -1,4 +1,5 @@
 package Code;
+import java.util.LinkedList;
 import java.util.Queue;
 import java.util.*;
 
@@ -396,6 +397,41 @@ public class SerializeBST
         return true;
     }
 
+
+    public List<List<Integer>> levelOrderBottom(Node root) {
+        Queue<Node> store = new LinkedList<Node>();
+        List<List<Integer>> returnList = new ArrayList<List<Integer>>();
+
+		if(root == null)
+            return returnList;
+
+        Node placeHolder = new Node(-1);
+        store.add(root);
+        store.add(placeHolder);
+
+        List<Integer> tempList = new ArrayList<Integer>();
+        while(!store.isEmpty()){
+            Node current = store.poll();
+            if(current == placeHolder && !store.isEmpty()){
+                returnList.add(0,tempList);
+                tempList = new ArrayList<Integer>();
+                store.add(placeHolder);
+            }
+            else if(current == placeHolder && store.isEmpty()){
+                returnList.add(0,tempList);
+                break;
+            }
+            else{
+                tempList.add(current.data);
+                if(current.left != null)
+                    store.add(current.left);
+                if(current.right != null)
+                    store.add(current.right);
+            }
+        }
+        return returnList;
+    }
+
 	public static void main(String[] args) 
 	{
 		SerializeBST obj = new SerializeBST();
@@ -438,13 +474,19 @@ public class SerializeBST
 		obj.inOrder(obj.root);
 		*/
 		
-		System.out.println("Serializing the bst");
+		/*System.out.println("Serializing the bst");
 		//System.out.println(obj.serialize(obj.root).toString());
 		ArrayList<Integer> temp = obj.serialize(obj.root);
 		System.out.println("Return array is : "+temp.toString());
 		System.out.println("Deserializing and printing");
 		Node tempRoot = obj.deSerialize(temp);
-		obj.inOrder(tempRoot);
+		obj.inOrder(tempRoot);*/
+
+        System.out.println("================LEVEL ORDER BOTTOM UP===========");
+        List<List<Integer>> returnList = obj.levelOrderBottom(obj.root);
+        for(List<Integer> n : returnList){
+            System.out.println("Current level list : "+n.toString());
+        }
 	}
 	
 	private static class Node
