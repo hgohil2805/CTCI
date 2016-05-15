@@ -19,7 +19,6 @@ public class RemoveElement {
                 nums[i] = nums[j];
                 i++;
             }
-
             j++;
         }
 

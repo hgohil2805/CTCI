@@ -52,4 +52,6 @@
   Given a non-negative number represented as an array of digits, plus one to the number
 - Pascal Triangle
   Given numRows, generate the first numRows of Pascal's triangle.
+- Power of four
+  Given an integer (signed 32 bits), write a function to check whether it is a power of 4.
    
