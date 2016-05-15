@@ -54,4 +54,6 @@
   Given numRows, generate the first numRows of Pascal's triangle.
 - Power of four
   Given an integer (signed 32 bits), write a function to check whether it is a power of 4.
+- Remove Duplicates from Sorted Array
+  Given a sorted array, remove the duplicates in place such that each element appear only once and return the new length.
    
