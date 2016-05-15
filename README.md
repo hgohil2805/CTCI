@@ -50,4 +50,6 @@
   SerializeBST.levelOrderBottom()
 - PlusOne
   Given a non-negative number represented as an array of digits, plus one to the number
+- Pascal Triangle
+  Given numRows, generate the first numRows of Pascal's triangle.
    
