@@ -432,6 +432,41 @@ public class SerializeBST
         return returnList;
     }
 
+    public List<List<Integer>> levelOrder(Node root) {
+        Queue<Node> store = new LinkedList<Node>();
+        List<List<Integer>> returnList = new ArrayList<List<Integer>> ();
+
+        if(root == null)
+            return returnList;
+
+        Node placeHolder = new Node(-1);
+        store.add(root);
+        store.add(placeHolder);
+
+        List<Integer> tempList = new ArrayList<Integer>();
+        while(!store.isEmpty()){
+            Node current = store.poll();
+            if(current == placeHolder && !store.isEmpty()){
+                returnList.add(tempList);
+                tempList = new ArrayList<Integer>();
+                store.add(placeHolder);
+            }
+            else if(current == placeHolder && store.isEmpty()){
+                returnList.add(tempList);
+                break;
+            }
+            else{
+                tempList.add(current.data);
+                if(current.left != null)
+                    store.add(current.left);
+                if(current.right != null)
+                    store.add(current.right);
+            }
+        }
+        return returnList;
+    }
+
+
 	public static void main(String[] args) 
 	{
 		SerializeBST obj = new SerializeBST();
