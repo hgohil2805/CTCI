@@ -458,7 +458,7 @@ public class SerializeBST
             else{
                 tempList.add(current.data);
                 if(current.left != null)
-                    store.add(current.left);11
+                    store.add(current.left);
                 if(current.right != null)
                     store.add(current.right);
             }
