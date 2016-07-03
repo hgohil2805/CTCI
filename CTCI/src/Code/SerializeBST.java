@@ -458,13 +458,40 @@ public class SerializeBST
             else{
                 tempList.add(current.data);
                 if(current.left != null)
-                    store.add(current.left);
+                    store.add(current.left);11
                 if(current.right != null)
                     store.add(current.right);
             }
         }
         return returnList;
     }
+
+
+	/**
+	 * Path from root to leaf is equal to sum.
+	 * */
+	public boolean hasPathSum(Node root, int sum) {
+		if(root == null)
+			return false;
+
+        return  hasPathSumHelper(root, 0, sum);
+	}
+
+    public boolean hasPathSumHelper(Node root, int currentSum, int sum) {
+        if (root == null)
+        {
+            return false;
+        }
+
+        if(root.left == null && root.right == null){
+            if(currentSum + root.data == sum){
+                return true;
+            }
+        }
+
+        return hasPathSumHelper(root.left, currentSum + root.data, sum) || hasPathSumHelper(root.right, currentSum + root.data, sum);
+    }
+
 
 
 	public static void main(String[] args) 
@@ -478,7 +505,7 @@ public class SerializeBST
 		obj.insertCaller(14);
 		obj.insertCaller(16);
 		
-		obj.inOrder(obj.root);
+		/*obj.inOrder(obj.root);*/
 		
 		/*System.out.println("Removing half nodes");
 		obj.removeHalf(obj.root);
@@ -517,11 +544,14 @@ public class SerializeBST
 		Node tempRoot = obj.deSerialize(temp);
 		obj.inOrder(tempRoot);*/
 
-        System.out.println("================LEVEL ORDER BOTTOM UP===========");
+        /*System.out.println("================LEVEL ORDER BOTTOM UP===========");
         List<List<Integer>> returnList = obj.levelOrderBottom(obj.root);
         for(List<Integer> n : returnList){
             System.out.println("Current level list : "+n.toString());
-        }
+        }*/
+
+        System.out.println("================Path Sum =================");
+        System.out.println(obj.hasPathSum(obj.root, 39));
 	}
 	
 	private static class Node
