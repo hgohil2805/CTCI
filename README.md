@@ -89,4 +89,7 @@
     
 - Pascals Traingle 2.0
   Given an index k, return the kth row of the Pascal's triangle. 
+
+- Valid Soduko
+  Determine if a Sudoku is valid
    
