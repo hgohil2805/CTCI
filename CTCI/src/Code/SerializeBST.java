@@ -492,19 +492,40 @@ public class SerializeBST
         return hasPathSumHelper(root.left, currentSum + root.data, sum) || hasPathSumHelper(root.right, currentSum + root.data, sum);
     }
 
+	/**
+	 * Minimum Depth of a Binary Tree
+	 * */
+
+    public int minDepth(Node root){
+        if(root == null)
+            return 0;
+
+        if(root.left == null && root.right == null){
+            return 1;
+        }
+
+        return 1 + Math.min(minDepth(root.left) + 1,minDepth(root.right) + 1);
+    }
+
+
+
 
 
 	public static void main(String[] args) 
 	{
 		SerializeBST obj = new SerializeBST();
-		obj.insertCaller(10);
+		/*obj.insertCaller(10);
 		obj.insertCaller(5);
 		obj.insertCaller(15);
 		obj.insertCaller(1);
 		obj.insertCaller(6);
 		obj.insertCaller(14);
 		obj.insertCaller(16);
-		
+        obj.insertCaller(20);*/
+        obj.insertCaller(1);
+        obj.insertCaller(2);
+        obj.insertCaller(3);
+
 		/*obj.inOrder(obj.root);*/
 		
 		/*System.out.println("Removing half nodes");
@@ -550,8 +571,12 @@ public class SerializeBST
             System.out.println("Current level list : "+n.toString());
         }*/
 
-        System.out.println("================Path Sum =================");
-        System.out.println(obj.hasPathSum(obj.root, 39));
+       /* System.out.println("================Path Sum =================");
+        System.out.println(obj.hasPathSum(obj.root, 39));*/
+
+        System.out.println("================Minimum Depth of a Binary Tree =================");
+        System.out.println("Obj root is: "+obj.root);
+        System.out.println(obj.minDepth(obj.root));
 	}
 	
 	private static class Node

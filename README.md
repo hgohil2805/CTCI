@@ -92,4 +92,8 @@
 
 - Valid Soduko
   Determine if a Sudoku is valid
+
+- Minimum depth of a Binary Tree(SerializeBST.minDepth)
+  Given a binary tree, find its minimum depth. (Note : Check this solution again)
+  
    
