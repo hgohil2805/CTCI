@@ -98,4 +98,7 @@
 
 - Bulls and Cow
   Bulls and Cows the game
+  
+- Implement Stack using Queues
+  Implement Stack using Queues
    
