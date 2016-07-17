@@ -95,5 +95,7 @@
 
 - Minimum depth of a Binary Tree(SerializeBST.minDepth)
   Given a binary tree, find its minimum depth. (Note : Check this solution again)
-  
+
+- Bulls and Cow
+  Bulls and Cows the game
    
