@@ -113,3 +113,7 @@
   
 - Remove Nth Node From End of List  (LL.removeNthFromEnd)
   Given a linked list, remove the nth node from the end of list and return its head.
+
+- Word Pattern 
+  Given a pattern and a string str, find if str follows the same pattern.
+  
