@@ -101,4 +101,6 @@
   
 - Implement Stack using Queues
   Implement Stack using Queues
-   
+
+- Isomorphic strings
+  egg and add are isomorphic. title and paper too. this and when aren't.
