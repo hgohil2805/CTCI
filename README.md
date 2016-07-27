@@ -107,3 +107,6 @@
   
 - Binary Tree Paths
   Given a binary tree, return all root-to-leaf paths
+
+- Merge Sorted Arrays
+  Merged Two Sorted Arrays Fam
