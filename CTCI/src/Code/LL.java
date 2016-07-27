@@ -96,7 +96,33 @@ public class LL
 		given.next = given.next.next;
 		this.printLL(root);
 	}
-	public static void main(String[] args) 
+
+	/**
+     * Remove Nth Node From End of List
+     *
+     * */
+    public Node removeNthFromEnd(Node head, int n) {
+
+        Node start = new Node(0);
+        Node slow = start;
+        Node fast = start;
+        slow.next = head;
+
+        for(int i = 1 ; i <= n + 1; i++){
+            fast = fast.next;
+        }
+
+        while(fast != null){
+            slow = slow.next;
+            fast = fast.next;
+        }
+
+        slow.next = slow.next.next;
+        return start.next;
+
+    }
+
+	public static void main(String[] args)
 	{
 		LL obj = new LL();
 		obj.addElement(1);
