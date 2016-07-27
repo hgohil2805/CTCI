@@ -8,6 +8,12 @@ import java.util.Map;
  */
 public class WordPattern {
 
+    public static void main(String args[]){
+        WordPattern obj = new WordPattern();
+        System.out.println(obj.wordPattern("abba","dog cat cat dog"));//True
+        System.out.println(obj.wordPattern("abba","dog cat cat fish"));//False
+    }
+
     public boolean wordPattern(String pattern, String str) {
         Map<Character,String> mapping = new HashMap<Character,String>();
         String[] strArray = str.split(" ");
