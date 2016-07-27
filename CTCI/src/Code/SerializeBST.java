@@ -507,10 +507,29 @@ public class SerializeBST
         return 1 + Math.min(minDepth(root.left) + 1,minDepth(root.right) + 1);
     }
 
+	/**
+     * Given a binary tree, return all root-to-leaf paths
+     * */
 
+    public List<String> binaryTreePaths(Node root) {
+        List<String> allPaths = new ArrayList<String>();
+        if(root != null) {
+            binaryTreePathsHelper(root, "", allPaths);
+        }
+        return allPaths;
+    }
 
-
-
+    public void binaryTreePathsHelper(Node root, String path, List<String> allPaths){
+        if(root.left == null && root.right == null){
+            allPaths.add(path + root.data);
+        }
+        if(root.left != null){
+            binaryTreePathsHelper(root.left, path+root.data+"->",allPaths);
+        }
+        if(root.right != null){
+            binaryTreePathsHelper(root.right, path+root.data+"->", allPaths);
+        }
+    }
 	public static void main(String[] args) 
 	{
 		SerializeBST obj = new SerializeBST();

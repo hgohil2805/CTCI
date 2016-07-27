@@ -104,3 +104,6 @@
 
 - Isomorphic strings
   egg and add are isomorphic. title and paper too. this and when aren't.
+  
+- Binary Tree Paths
+  Given a binary tree, return all root-to-leaf paths
