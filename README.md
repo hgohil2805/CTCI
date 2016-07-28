@@ -123,5 +123,8 @@
   The count-and-say sequence is the sequence of integers beginning as follows:1, 11, 21, 1211, 111221, ...
 
 - Guess higher or lower
+
+- Length of last word 
+  Given a string s consists of upper/lower-case alphabets and empty space characters ' ', return the length of last word in the string.
   
   
