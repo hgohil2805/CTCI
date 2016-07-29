@@ -126,5 +126,8 @@
 
 - Length of last word 
   Given a string s consists of upper/lower-case alphabets and empty space characters ' ', return the length of last word in the string.
+
+- Reverse Bits
+  Reverse bits of a given 32 bits unsigned integer.
   
   
