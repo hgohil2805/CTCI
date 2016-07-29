@@ -129,5 +129,8 @@
 
 - Reverse Bits
   Reverse bits of a given 32 bits unsigned integer.
+
+- Common Prefix
+  Common prefix in an array of strings.
   
   
