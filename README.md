@@ -132,5 +132,8 @@
 
 - Common Prefix
   Common prefix in an array of strings.
+
+- Add Binary
+  Given two binary strings, return their sum (also a binary string).
   
   
