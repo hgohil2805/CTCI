@@ -135,5 +135,8 @@
 
 - Add Binary
   Given two binary strings, return their sum (also a binary string).
+
+- strStrFunction
+  index of needle if needle exists in Haystack. Else return -1
   
   
