@@ -144,5 +144,7 @@
 
 - Two Sum
   Return if two numbers in an array add to a given target. Return in form of indexes of both the numbers within the array
-  
+
+- Count Primes
+  Count the number of prime numbers less than a non-negative number, n.
   
