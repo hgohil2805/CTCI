@@ -141,5 +141,8 @@
 
 - Range Sum Query - Immutable
   Given an integer array nums, find the sum of the elements between indices i and j (i ≤ j), inclusive.
+
+- Two Sum
+  Return if two numbers in an array add to a given target. Return in form of indexes of both the numbers within the array
   
   
