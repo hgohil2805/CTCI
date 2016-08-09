@@ -127,4 +127,6 @@
 - Length of last word 
   Given a string s consists of upper/lower-case alphabets and empty space characters ' ', return the length of last word in the string.
   
+- ZigZag Conversion 
+  The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of rows  
   
