@@ -130,3 +130,6 @@
 - ZigZag Conversion 
   The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of rows and then read line by line: "PAHNAPLSIIGYIR"
   
+- Valid Palindrome
+  Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.
+  
