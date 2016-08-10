@@ -136,3 +136,6 @@
 - Reverse Integer 
   Reverse digits of an integer with consideration for overflow
   
+- Min Stack 
+  Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
+  
