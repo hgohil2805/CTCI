@@ -133,3 +133,6 @@
 - Valid Palindrome
   Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.
   
+- Reverse Integer 
+  Reverse digits of an integer with consideration for overflow
+  
