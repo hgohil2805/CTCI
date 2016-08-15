@@ -142,3 +142,5 @@
 - First Bad Version
   Find the first bad version in a list of versions. 
   
+- Excel sheet column title 
+  Given a positive integer, return its corresponding column title as appear in an Excel sheet.
