@@ -139,3 +139,6 @@
 - Min Stack 
   Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
   
+- First Bad Version
+  Find the first bad version in a list of versions. 
+  
