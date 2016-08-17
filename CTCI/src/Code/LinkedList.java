@@ -1,10 +1,12 @@
 package Code;
 
-import java.util.Arrays;
+
+import java.util.Random;
 
 public class LinkedList
 {
 	public Node head;
+    Random randomGenerator;
 	public LinkedList()
 	{
 		System.out.println("LinkedList created");
@@ -184,6 +186,20 @@ public class LinkedList
             head = head.next;
         }
     }
+
+	public int getRandom() {
+		Node result = null;
+        Node current = this.head;
+
+        for(int  i = 0 ; current != null; i++){
+                if(this.randomGenerator.nextInt(i) == 0){
+                    result = current;
+                }
+            current = current.next;
+        }
+        return result.data;
+	}
+
 
 	public static void main(String[] args) 
 	{

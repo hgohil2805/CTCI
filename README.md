@@ -159,3 +159,6 @@
 - Counting Bits
   Given a non negative integer number num. For every numbers i in the range 0 ≤ i ≤ num calculate the number of 1's in their binary .
   For example : For num = 5 you should return [0,1,1,2,1,2].
+  
+- Linkedlist random node
+  Given a singly linked list, return a random node's value from the linked list. Each node must have the same probability of being chosen
