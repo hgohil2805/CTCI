@@ -162,3 +162,6 @@
   
 - Linkedlist random node
   Given a singly linked list, return a random node's value from the linked list. Each node must have the same probability of being chosen
+ 
+- Single Numbers 3
+  Given an array of numbers nums, in which exactly two elements appear only once and all the other elements appear exactly twice. Find the two elements that appear only once.
