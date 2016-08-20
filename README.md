@@ -176,5 +176,8 @@
   
   For example,
   Given [1,1,1,2,2,3] and k = 2, return [1,2].
+  
+- Best Time to Buy and Sell Stock II
+  Say you have an array for which the ith element is the price of a given stock on day i.
 
   
