@@ -179,5 +179,8 @@
   
 - Best Time to Buy and Sell Stock II
   Say you have an array for which the ith element is the price of a given stock on day i.
+  
+- Count Numbers with Unique Digits
+  Given a non-negative integer n, count all numbers with unique digits, x, where 0 ≤ x < 10n.
 
   
