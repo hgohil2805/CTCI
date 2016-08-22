@@ -115,7 +115,7 @@ public class SerializeBST
 			order.add(current);
 			while(!order.isEmpty())
 			{
-				Node workingNode = (Node) order.poll();
+				Node workingNode = order.poll();
 				System.out.println(workingNode.data);
 				if(workingNode.left != null)
 				{
@@ -391,10 +391,8 @@ public class SerializeBST
         if(!isSymmetricHelper(left.left, right.right))
             return false;
 
-        if(!isSymmetricHelper(left.right, right.left))
-            return false;
+        return isSymmetricHelper(left.right, right.left);
 
-        return true;
     }
 
 
@@ -518,6 +516,30 @@ public class SerializeBST
         }
         return allPaths;
     }
+
+
+	/**
+	 * Pre Order using Stack
+	 * */
+
+    public List<Integer> preOrderTraversal(Node root){
+        List<Integer> returnList = new ArrayList<Integer>();
+        Stack<Node> stack = new Stack<Node>();
+
+        while(!stack.isEmpty()){
+            returnList.add(root.data);
+            if(root.right != null){
+                stack.push(root.right);
+            }
+            root = root.left;
+            if(root == null && !stack.isEmpty()){
+                root = stack.pop();
+            }
+        }
+
+        return returnList;
+    }
+
 
     public void binaryTreePathsHelper(Node root, String path, List<String> allPaths){
         if(root.left == null && root.right == null){

@@ -192,3 +192,6 @@
   For example,
   Given nums = [0, 1, 3] return 2.
   
+- Pre Order using Stack
+  SerializeBST.preOrderTraversal()
+  
