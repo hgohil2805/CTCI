@@ -182,5 +182,9 @@
   
 - Count Numbers with Unique Digits
   Given a non-negative integer n, count all numbers with unique digits, x, where 0 ≤ x < 10n.
+  
+- Integer Break
+  Given a positive integer n, break it into the sum of at least two positive integers and maximize the product of those integers.
+  Return the maximum product you can get
 
   
