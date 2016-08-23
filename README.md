@@ -199,3 +199,8 @@
   Given an array of integers that is already sorted in ascending order, find two numbers such that they add up to a specific target number.
   Input: numbers={2, 7, 11, 15}, target=9
   Output: index1=1, index2=2
+  
+- Bulb Switcher
+  There are n bulbs that are initially off. You first turn on all the bulbs. 
+  Then, you turn off every second bulb. On the third round, you toggle every third bulb (turning on if it's off or turning off if it's on). 
+  For the ith round, you toggle every i bulb. For the nth round, you only toggle the last bulb. Find how many bulbs are on after n rounds.
