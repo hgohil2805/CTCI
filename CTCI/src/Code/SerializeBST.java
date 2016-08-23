@@ -1,4 +1,6 @@
 package Code;
+import LeetCode.IntegerBreak;
+
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.*;
@@ -537,6 +539,24 @@ public class SerializeBST
             }
         }
 
+        return returnList;
+    }
+
+    public List<Integer> inOrderTraversal(Node root) {
+        List<Integer> returnList = new ArrayList<Integer>();
+        Stack<Node> stack = new Stack<Node>();
+        Node current = root;
+
+        while (current != null && !stack.isEmpty()) {
+
+            while (current != null) {
+                stack.push(current);
+                current = current.left;
+            }
+            current = stack.pop();
+            returnList.add(current.data);
+            current = current.right;
+        }
         return returnList;
     }
 
