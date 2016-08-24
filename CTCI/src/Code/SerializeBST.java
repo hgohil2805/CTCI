@@ -572,6 +572,27 @@ public class SerializeBST
             binaryTreePathsHelper(root.right, path+root.data+"->", allPaths);
         }
     }
+
+
+    public int kthSmallest(Node root, int k) {
+        int n = getNodeCount(root.left);
+        if(k <= n){
+            return kthSmallest(root.left,k);
+        }
+        else if(k > n + 1){
+            return kthSmallest(root.right,k+1);
+        }
+        return root.data;
+    }
+
+    public int getNodeCount(Node root){
+        if(root == null)
+            return 0;
+
+        return 1 + getNodeCount(root.left) + getNodeCount(root.right);
+    }
+
+
 	public static void main(String[] args) 
 	{
 		SerializeBST obj = new SerializeBST();

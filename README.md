@@ -227,6 +227,10 @@
   Example:
   Given 1->2->3->4->5->NULL,
   return 1->3->5->2->4->NULL.
+  
+- Kth Smallest Element in a BST
+  Given a binary search tree, write a function kthSmallest to find the kth smallest element in it.
+  SerializeBST.kthSmallest()
  
 
   
