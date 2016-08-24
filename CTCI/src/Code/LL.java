@@ -99,7 +99,6 @@ public class LL
 
 	/**
      * Remove Nth Node From End of List
-     *
      * */
     public Node removeNthFromEnd(Node head, int n) {
 
@@ -108,7 +107,7 @@ public class LL
         Node fast = start;
         slow.next = head;
 
-        for(int i = 1 ; i <= n + 1; i++){
+        for(int i = 1 ; i <= n + 1;  i++){
             fast = fast.next;
         }
 
@@ -120,6 +119,23 @@ public class LL
         slow.next = slow.next.next;
         return start.next;
 
+    }
+
+    public Node oddEvenList(Node head) {
+        if(head != null){
+            Node odd = head;
+            Node even = head.next;
+            Node evenHead = head.next;
+
+            while(even != null  && even.next !=null){
+                odd.next = odd.next.next;
+                even.next = even.next.next;
+                odd = odd.next;
+                even = even.next;
+            }
+            odd.next = evenHead;
+        }
+            return head;
     }
 
 	public static void main(String[] args)
