@@ -593,6 +593,30 @@ public class SerializeBST
     }
 
 
+
+    public Node sortedArrayToBST(int[] nums){
+        if(nums.length == 0){
+            return null;
+        }
+        Arrays.sort(nums);
+        return sortedArrayToBSTHelper(nums, 0, nums.length - 1);
+    }
+
+    public Node sortedArrayToBSTHelper(int[] nums, int low, int high){
+        if(low > high)
+            return null;
+        int mid = (low+high)/2;
+
+        Node newNode = new Node(nums[mid]);
+        newNode.left = sortedArrayToBSTHelper(nums,low, mid-1);
+        newNode.right = sortedArrayToBSTHelper(nums,mid+1,high);
+
+        return newNode;
+    }
+
+
+
+
 	public static void main(String[] args) 
 	{
 		SerializeBST obj = new SerializeBST();
@@ -655,10 +679,15 @@ public class SerializeBST
 
        /* System.out.println("================Path Sum =================");
         System.out.println(obj.hasPathSum(obj.root, 39));*/
-
+/*
         System.out.println("================Minimum Depth of a Binary Tree =================");
         System.out.println("Obj root is: "+obj.root);
-        System.out.println(obj.minDepth(obj.root));
+        System.out.println(obj.minDepth(obj.root));*/
+
+        System.out.println("Sorted array to tree converted");
+        int[] sortedArrayToTreeTest = {1,2,3,4,5};
+        Node tempNode = obj.sortedArrayToBST(sortedArrayToTreeTest);
+        obj.inOrder(tempNode);
 	}
 	
 	private static class Node
