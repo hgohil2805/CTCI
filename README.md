@@ -270,3 +270,6 @@
 - Gray Code
   Given a non-negative integer n representing the total number of bits in the code, print the sequence of gray code. A gray code sequence must begin with 0.
   
+- Permutations
+  Given a collection of distinct numbers, return all possible permutations.
+  
