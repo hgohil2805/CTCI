@@ -278,3 +278,6 @@
   The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid (marked 'Finish' in the diagram below).
   How many possible unique paths are there?
   
+- Minimum in Rotated Array
+  Suppose a sorted array is rotated at some pivot unknown to you beforehand.
+  
