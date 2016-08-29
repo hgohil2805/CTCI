@@ -280,4 +280,7 @@
   
 - Minimum in Rotated Array
   Suppose a sorted array is rotated at some pivot unknown to you beforehand.
+
+- Maximum Subarray
+  Find the contiguous subarray within an array (containing at least one number) which has the largest sum.
   
