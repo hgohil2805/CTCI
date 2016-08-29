@@ -267,3 +267,6 @@
   Given a sorted array and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order.
   [1,3,5,6], 5 → 2
   
+- Gray Code
+  Given a non-negative integer n representing the total number of bits in the code, print the sequence of gray code. A gray code sequence must begin with 0.
+  
