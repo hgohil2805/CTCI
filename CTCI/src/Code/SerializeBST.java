@@ -615,6 +615,25 @@ public class SerializeBST
     }
 
 
+	public List<Integer> rightSideView(Node root) {
+		List<Integer> result = new ArrayList<>();
+		rightSideViewHelper(root,result,0);
+		return result;
+	}
+
+	public void rightSideViewHelper(Node root, List<Integer> result, int currentDepth){
+		if(root == null)
+			return;
+
+		if(result.size() == currentDepth){
+			result.add(root.data);
+		}
+
+		rightSideViewHelper(root.right,result,currentDepth + 1);
+		rightSideViewHelper(root.left,result,currentDepth + 1);
+
+	}
+
 
 
 	public static void main(String[] args) 
