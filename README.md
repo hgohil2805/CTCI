@@ -290,3 +290,6 @@
 - Valid Perfect Square
   Given a positive integer num, write a function which returns True if num is a perfect square else False.
   
+- Spiral Matrix
+  Given an integer n, generate a square matrix filled with elements from 1 to n2 in spiral order.
+  
