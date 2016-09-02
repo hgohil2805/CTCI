@@ -314,4 +314,8 @@
   Here, we will use the integers 0, 1, and 2 to represent the color red, white, and blue respectively
   
 - Game of Life  
+
+- Increasing Triplet Sub Sequence
+  Given an unsorted array return whether an increasing subsequence of length 3 exists or not in the array.
+
   
