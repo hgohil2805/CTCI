@@ -329,3 +329,6 @@
   Write an efficient algorithm that searches for a value in an m x n matrix. This matrix has the following properties:
   Integers in each row are sorted from left to right.
   The first integer of each row is greater than the last integer of the previous row.
+  
+- Peeking Iterator
+  Given an Iterator class interface with methods: next() and hasNext(), design and implement a PeekingIterator that support the peek() operation -- it essentially peek() at the element that will be returned by the next call to next().
