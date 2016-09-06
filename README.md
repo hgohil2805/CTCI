@@ -342,3 +342,6 @@
 - Wiggle Subsequence
   Given a sequence of integers, return the length of the longest subsequence that is a wiggle sequence  
   
+- Decode String
+  Given an encoded string, return it's decoded string.s = "3[a]2[bc]", return "aaabcbc".
+  
