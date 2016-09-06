@@ -359,5 +359,6 @@
 - Subsets
   Given a set of distinct integers, nums, return all possible subsets.
  
-  
+- Verify Preorder Serialization of a Binary Tree
+  Given a string of comma separated values, verify whether it is a correct preorder traversal serialization of a binary tree. Find an algorithm without reconstructing the tree.
   
