@@ -378,3 +378,6 @@
 
 - Subsets II
   Given a collection of integers that might contain duplicates, nums, return all possible subsets.
+  
+- House robber II
+  After robbing those houses on that street, the thief has found himself a new place for his thievery so that he will not get too much attention. This time, all houses at this place are arranged in a circle
