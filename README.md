@@ -386,4 +386,5 @@
   Given a set of distinct positive integers, find the largest subset such that every pair (Si, Sj) of elements in this subset satisfies: Si % Sj = 0 or Sj % Si = 0.
   
 - Guess Number Higher or Lower II
+  Guess number + pay for the guessed number. 
   
