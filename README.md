@@ -388,3 +388,5 @@
 - Guess Number Higher or Lower II
   Guess number + pay for the guessed number. 
   
+- Triangle
+  Given a triangle, find the minimum path sum from top to bottom. Each step you may move to adjacent numbers on the row below.
