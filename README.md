@@ -393,3 +393,7 @@
   
 - Super pow 
   Your task is to calculate ab mod 1337 where a is a positive integer and b is an extremely large positive integer given in the form of an array.
+
+- Longest Substring with At Least K Repeating Characters
+  Find the length of the longest substring T of a given string (consists of lowercase letters only) such that every character in T appears no less than k times.
+  
