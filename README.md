@@ -390,3 +390,6 @@
   
 - Triangle
   Given a triangle, find the minimum path sum from top to bottom. Each step you may move to adjacent numbers on the row below.
+  
+- Super pow 
+  Your task is to calculate ab mod 1337 where a is a positive integer and b is an extremely large positive integer given in the form of an array.
