@@ -402,3 +402,6 @@
   
 - Letter Combinations of a Phone Number
   Given a digit string, return all possible letter combinations that the number could represent. 
+  
+- Ugly Number II
+  Write a program to find the n-th ugly number.
