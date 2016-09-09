@@ -400,3 +400,5 @@
 - H-Index
   Given an array of citations (each citation is a non-negative integer) of a researcher, write a function to compute the researcher's h-index.
   
+- Letter Combinations of a Phone Number
+  Given a digit string, return all possible letter combinations that the number could represent. 
