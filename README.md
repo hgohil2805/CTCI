@@ -405,3 +405,7 @@
   
 - Ugly Number II
   Write a program to find the n-th ugly number.
+  
+- Unique Paths IIUnique Paths II 
+  Follow up for "Unique Paths":
+  Now consider if some obstacles are added to the grids. How many unique paths would there be?
