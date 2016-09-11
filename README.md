@@ -413,3 +413,6 @@
 - Search for a Range
   Given a sorted array of integers, find the starting and ending position of a given target value.  Your algorithm's runtime complexity must be in the order of O(log n).
   Given [5, 7, 7, 8, 8, 10] and target value 8,return [3, 4]
+  
+- 3Sum Closest
+  Given an array S of n integers, find three integers in S such that the sum is closest to a given number, target. Return the sum of the three integers. You may assume that each input would have exactly one solution.
