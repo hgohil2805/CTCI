@@ -416,3 +416,7 @@
   
 - 3Sum Closest
   Given an array S of n integers, find three integers in S such that the sum is closest to a given number, target. Return the sum of the three integers. You may assume that each input would have exactly one solution.
+  
+- Number of Islands
+  Given a 2d grid map of '1's (land) and '0's (water), count the number of islands. An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically.
+  You may assume all four edges of the grid are all surrounded by water.
