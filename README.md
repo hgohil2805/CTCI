@@ -425,4 +425,7 @@
 
 - Group Anagrams
   Given an array of strings, group anagrams together.
+
   
+- Bit Manipulation Guide
+  https://discuss.leetcode.com/topic/50315/a-summary-how-to-use-bit-manipulation-to-solve-problems-easily-and-efficiently
