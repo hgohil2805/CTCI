@@ -429,3 +429,8 @@
   
 - Bit Manipulation Guide
   https://discuss.leetcode.com/topic/50315/a-summary-how-to-use-bit-manipulation-to-solve-problems-easily-and-efficiently
+  
+- Intersection of Two Arrays II
+  Given two arrays, write a function to compute their intersection.
+  Example:
+  Given nums1 = [1, 2, 2, 1], nums2 = [2, 2], return [2, 2].
