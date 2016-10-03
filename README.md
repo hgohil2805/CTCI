@@ -434,3 +434,6 @@
   Given two arrays, write a function to compute their intersection.
   Example:
   Given nums1 = [1, 2, 2, 1], nums2 = [2, 2], return [2, 2].
+  
+- Longest Palindrome
+  Given a string which consists of lowercase or uppercase letters, find the length of the longest palindromes that can be built with those letters.
