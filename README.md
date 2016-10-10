@@ -436,4 +436,8 @@
   Given nums1 = [1, 2, 2, 1], nums2 = [2, 2], return [2, 2].
   
 - Longest Palindrome
-  Given a string which consists of lowercase or uppercase letters, find the length of the longest palindromes that can be built with those letters.
+  Given a string which consists of lowercase or uppercase, find the length of the longest palindromes that can be built with those letters.
+  
+- Add Strings 
+  Given two non-negative numbers num1 and num2 represented as string, return the sum of num1 and num2.
+  
