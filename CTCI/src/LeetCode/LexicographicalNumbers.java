@@ -10,7 +10,7 @@ public class LexicographicalNumbers {
 
     public static void main(String args[]){
         LexicographicalNumbers obj = new LexicographicalNumbers();
-        System.out.println(obj.lexicalOrder(13).toString());
+        System.out.println(obj.lexicalOrder(40).toString());
     }
 
     public List<Integer> lexicalOrder(int n) {
